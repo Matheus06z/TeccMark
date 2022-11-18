@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: rgb(94, 94, 94);
+}
+.navbar{
+    height: 100px;
+    background: rgb(50, 105, 187);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    flex:20%;
+    text-align: center;
+    margin-left: 10%;
+}
+.logo h1{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+.menu1{
+    flex: 70%;
+    text-align: right;
+    padding: 10px;
+    
+}
+.menu a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+.menu1 a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 105, 187);
+}
+#botao{
+    background-color: black;
+    padding: 10px 10px;
+    padding-right: 10px;
+    color: white;
+    border-radius: 5px;
+    
+    margin-left: 105px;
+}
+#botao:hover{
+    border: none;
+    background-color: rgb(95, 145, 222);
+}
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(58, 51, 51);
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.headline{
+    margin-left: 10%;
+    flex: 40%;
+}
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color: darkgray
+}
+.headline p{
+    text-align: left;
+    color: darkgray
+}
+.contact-btn{
+    background-color: rgb(50, 105, 187);
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 10px;
+}
+.contact-btn:hover{
+    background-color: rgb(95, 145, 222);
+}
+.img{
+    margin-right: 10%;
+    flex: 40%;
+    text-align: left;
+    border-radius: 5px;
+}
+section{
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+}
+section h2{
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+}
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-table ;
+    margin: 20px;
+    padding: 25px;
+    background-color: rgb(50, 105, 187);
+    width: 350px;
+    height: 300px;
+}
+.card:hover{
+    background-color: rgb(95, 145, 222);
+}
+.card h3{
+    color: black;
+}
+.card p{
+    color: black;
+}
+footer{
+    margin-top: 100px;
+    height: 300px;
+    background-image: linear-gradient(180deg, rgb(50, 105, 187), black);
+    text-align: center;
+    border-top: 5px solid rgb(218, 218, 218);
+    color: white;
+}
+footer h1{
+    font-size: 40px;
+}
+footer p{
+    font-size: 20px;
+}
+
+/*botao oculto -- comportamento*/
+.bt{
+    display: none;
+    margin-top: 20px;
+}
+.bt a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
+.bt a:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid black;
+    font-size: 18px;
+}
+@media(max-width:820px){
+    body{
+        text-align: center;
+    }
+    .logo{
+        margin-left: 0%;
+        text-align: center;
+    }
+    
+    .header{
+        display: inline;
+        margin-top: 1000px;
+        text-align: center;
+    }
+    .navbar{
+        position: relative;
+        text-align: center;
+    }
+    .menu{
+        text-align: center;
+    }
+    .headline{
+        margin-right: 0%;
+        margin-left: 0%;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .servicos h2 {
+        font-size: 40px;
+    }
+
+    .headline a{
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    .headline p{
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: center;
+    }
+    .img{
+        margin: 0%;
+        text-align: center;
+    }
+    .bt{
+        display: block;
+        text-align: center;
+    }
+}
+       
+
+.servicos > h2 {
+    font-weight: 900;
+    font-size: 50px;
+    color: rgb(180, 180, 180)
+}
+
+.sub {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgba(58, 51, 51, 0.404);
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    border-radius: 6000px;
+}
+
+/*topo*/
+.navbar{
+font-family: arial, helvetica, sans-serif;
+font-size: 12px;
+}
+
+.menu{
+    list-style:none;
+    float:left;
+}
+
+.menu li{
+    position:relative;
+    float:left;
+    border-right:1px solid #c0c0c0;
+    }
+
+.menu li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+    }
+.menu li{
+    position:relative;
+    float:left;
+    border-right:none;
+    border-radius: 30px;
+}
+.menu li a{
+    color:rgb(255, 255, 255); 
+    text-decoration:none; 
+    padding:5px 10px; 
+    display:block;
+}
+.menu li a{
+    color:black;
+    text-decoration:none; 
+    
+    display:block;
+}
+.menu li .aa{
+    
+    text-decoration:none; 
+    background-color: rgb(95, 145, 222);
+    display:block;
+    border-radius: 30px;
+    
+}
+.menu li a:hover{
+background:  rgb(95, 145, 222);
+color:#fff;
+border-radius: 30px;
+
+text-shadow:0px 0px 5px #fff;
+}
+.menu li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color: rgba(255, 255, 255, 0);
+    display:none;
+}
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+}
+.menu li ul li{
+        border:1px solid #c0c0c0;
+        display:block;
+        width:150px;
+        }
+
+
+    .img{
+        text-align: center;
+        border-radius: 15px;
+    }
+        
+/*Rodapé*/
+.rodape-prin{
+    padding: 28px;         
+    color: rgb(250,255,250);
+    font-size: 25px;
+    font-family: "arial", sans-serif;
+}
+
+.icones-sociais li
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 1000px;
+}
+
+.link:hover{
+    
+    padding: 10px 10px 10px 10px ;
+      box-shadow: darkblue 50px;
+}
